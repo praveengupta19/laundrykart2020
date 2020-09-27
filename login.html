@@ -1,0 +1,93 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Login | Renal Project</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/font-awesome.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+</head>
+<style>
+body::before {
+    margin: 0;
+    padding: 0;
+    content: "";
+    background: url(img/slider5.jpg) no-repeat center center fixed;
+    background-size: cover;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.81;
+}
+
+.container-fluid {
+    width: 30%;
+}
+
+@media only screen and (max-width: 600px) {
+    .container-fluid {
+        width: 100%;
+    }
+    h1{
+        position: absolute;
+        top:0;
+    }
+}
+
+@media only screen and (min-width: 600px) {
+    /* form {
+        position: relative;
+        left: 80%;
+    } */
+}
+
+form {
+    border-radius: 10px;
+    margin-top: 50%;
+}
+
+h1{
+    position: absolute;
+    top: 1.3rem;
+    left: 1rem;
+}
+</style>
+
+<body>
+    <div class="container-fluid bg-light rounded bg-success">
+    <h1 class="animate__animated animate__slideInLeft border"><strong>Laundry Kart</strong></h1>
+        <form action=""  class="animate__animated animate__slideInRight py-4" method="POST">
+            <h3 class="heading">Login</h3>
+            <!-- Form Start -->
+            <div class="form-group">
+                <label>Select Role</label>
+                <select name="role" id="select" onchange="fun()" class="form-control">
+                    <option value="select">Select</option>
+                    <option value="0">Login</option>
+                    <option value="1">Signup</option>
+                </select>
+            </div>
+            <div class="form-group aa" style="display: none;">
+                <label>Username</label>
+                <input type="text" name="username" class="form-control" placeholder="" required>
+            </div>
+            <div class="form-group aa" style="display: none;">
+                <label>Password</label>
+                <input type="password" name="password" class="form-control" placeholder="" required>
+            </div>
+            <input type="submit" name="login" style="display: none;" class="btn btn-primary aa" value="login" />
+        </form>
+        <!-- /Form  End -->
+    </div>
+</body>
+
+</html>
+<script src="js/jquery.js"></script>
+<script src="js/index.js"></script>
