@@ -1,0 +1,121 @@
+
+/* section{
+    width: 100%;
+} */
+
+/* body{
+    position: relative;
+    background: url(../img/slider4.jpg) no-repeat;
+    background-size: cover;
+    height: 70vh;
+} */
+
+.bg-img::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url(../img/darken-bg.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    z-index: -1;
+    /* opacity: 0.8; */
+}
+
+/* .wave::before{
+    content: "";
+    position: absolute;
+    top: 50vh;
+    left: 0;
+    width: 100%;
+    height: 30vh;
+    background: url(../img/wave.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+} */
+
+.card{
+    max-height: 100%;
+    transition: transform .2s;
+}
+
+.card:hover{
+    -ms-transform: scale(1.1); /* IE 9 */
+    -webkit-transform: scale(1.1); /* Safari 3-8 */
+    transform: scale(1.1);
+}
+
+.h{
+    height: 100vh;
+}
+
+nav a,.line-nav a{
+    color:white;
+}
+
+nav a:hover{
+    color:rgb(66, 62, 62);
+    background-color: white;
+}
+
+.line-nav a:hover{
+    color:rgb(66, 62, 62);
+    background-color: white;
+}
+
+.active{
+    color:rgb(66, 62, 62);
+    background-color: white;
+}
+
+.card-margin{
+    margin-top: 40px;
+}
+
+.icon{
+    display: none;
+}
+
+@media screen and (max-width: 800px) {
+    .ham-burger a{
+        display: none;
+    }
+    .icon {
+        display: block;
+        float: right;
+    }
+    .card-margin{
+        margin-top: 0;
+    }
+    .rm{
+        margin: 0 -6rem;
+    }
+    h4{
+        font-size: 1.2rem;
+    }
+    p{
+        font-size: 0.8rem;
+    }
+    .card-body{
+        padding: 0;
+    }
+  }
+
+.line-nav{
+    overflow: hidden;
+    display: none;
+}
+
+.line-nav a{
+    display: flex;
+}
+
+.bg-bg{
+    background-color: rgb(231, 228, 231);
+}
+
+.rt{
+    transform: rotate(-3deg);
+}
