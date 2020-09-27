@@ -98,6 +98,9 @@ nav a:hover{
     p{
         font-size: 0.8rem;
     }
+    .card-body{
+        padding: 0;
+    }
   }
 
 .line-nav{
